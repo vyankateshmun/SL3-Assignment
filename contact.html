@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<div class="topnav">
+  		<a class="active" href="index.html">Home</a>
+	  	<div class="topnav-right">
+		  	<div class="dropdown">
+			    <button class="dropbtn">Sections</button>
+			    <div class="dropdown-content">
+					<a href="leaders.html">Leaders</a>
+					<a href="science.html">Science</a>
+					<a href="football.html">Football</a>
+					<a href="#">Dictators</a>
+					<a href="#">Cricket</a>
+					<a href="#">Politician</a>
+					<a href="#">Astronaut</a>
+			    </div>
+		  	</div>
+			<a href="login.html">Login</a>
+			<a href="signup.html">Sign Up</a>
+		</div>
+  	</div>
+	<hr>
+	<div>
+		<center><h1>Enter Contact Details</h1></center>
+		<form name="contactForm" onsubmit="return validateForm()" action="index.html" method="post" class="formchng">
+			<div class="container">
+			<label for="fname">First Name :</label>
+			<input name="fname" type="text" id="fname" placeholder="First Name">
+			<div class="error" id="nameErr"></div>	
+			<label for="lname">Last Name :</label>
+			<input name="lname"type="text" id="lname" placeholder="Last Name">
+			<div class="error" id="lnameErr"></div>
+			<label for="address">Address :</label>
+			<input name="address" type="address" id="address" placeholder="Address">
+			<div class="error" id="addressErr"></div>
+			<label for="email">Email :</label>
+			<input name="email"type="email" id="email" placeholder="Email Id">
+			<div class="error" id="emailErr"></div>
+			<label for="mobile">Mobile :</label>
+			<input name="mobile" type="number" id="mobile" placeholder="Mobile No.">
+			<div class="error" id="mobileErr"></div>
+			<label for="pincode">Pincode :</label>
+			<input name="pincode" type="number" id="pincode" placeholder="Pincode.">
+			<div class="error" id="pincodeErr"></div>
+			</div>
+			<div >
+	        	<input name="submit" class="registerbtn" type="submit" value="Submit">
+	    	</div>
+		</form>
+	</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

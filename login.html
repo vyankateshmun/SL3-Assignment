@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<div class="topnav">
+  		<a class="active" href="index.html">Home</a>
+	  	<div class="topnav-right">
+		  	<div class="dropdown">
+			    <button class="dropbtn">Sections</button>
+			    <div class="dropdown-content">
+					<a href="leaders.html">Leaders</a>
+					<a href="science.html">Science</a>
+					<a href="football.html">Football</a>
+					<a href="#">Dictators</a>
+					<a href="#">Cricket</a>
+					<a href="#">Politician</a>
+					<a href="#">Astronaut</a>
+			    </div>
+		  	</div>
+			<a href="contact.html">Contact Us</a>
+			<a href="signup.html">Sign Up</a>
+		</div>
+  	</div>
+	<hr>
+	<div>
+		<center><h1>Enter Login Details</h1></center>
+		<form name="contactForm" onsubmit="return validateForm()" action="index.html" method="post" class="formchng">
+			<div class="container">
+			<label for="email">Email :</label>
+			<input name="email"type="email" id="email" placeholder="Email Id">
+			<div class="error" id="emailErr"></div>
+			<label for="password">Password :</label>
+			<input name="password" type="password" id="password" placeholder="Password">
+			<div class="error" id="passwordErr"></div>
+			</div>
+			<div >
+	        	<input name="submit" class="registerbtn" type="submit" value="Submit">
+	    	</div>
+		</form>
+	</div>
+<script type="text/javascript" src="app1.js"></script>
+</body>
+</html>
